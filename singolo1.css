@@ -18,7 +18,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li, span {
     width: 1020px;
     height: 89px;
     background: #2d303a;
-    /*overflow: hidden;*/
+    overflow: hidden;
     border-bottom: 6px solid #323746;    
     }
 
@@ -32,7 +32,6 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li, span {
     width: 115px;
 	height: 20px;
 	background: url(assets/logo.png) no-repeat;
-    /*text-indent: -9999px;*/
     position: absolute;
     left: 40px;
     top: 35px;   
@@ -122,19 +121,16 @@ a:active {
     width: 1020px;
     height: 495px;
     background: #f2f2f2;
-    /*overflow: hidden;*/
+    overflow: hidden;
     border-bottom: 6px solid #ffffff;
 }
 
 .wrapper_serv h1 {
     padding-top: 65px;
     padding-left: 40px;
-    /*padding-right: 40px;
-    padding-bottom: 35px;*/
     font-size: 30px;
     font-weight: 900;
     color: #666d89;
-    /*margin: 0 0 21px 0;*/
 }
 
 
@@ -166,11 +162,12 @@ p {
     color: #767e9e;
     position: relative;
     left: 40px;
-    }
+    text-align: justify;
+}
     
 .pen {
     position: relative;
-    left: 20px;
+    left: 40px;
     width: 59px;
     height: 59px;
     border-radius: 50%;
@@ -179,7 +176,7 @@ p {
 
 .bulb {
     position: relative;
-    left: 40px;
+    left: 80px;
     width: 59px;
     height: 59px;
     border-radius: 50%;
@@ -188,7 +185,7 @@ p {
 
 .heart {
     position: relative;
-    left: 60px;
+    left: 120px;
     width: 59px;
     height: 59px;
     border-radius: 50%;
@@ -197,7 +194,7 @@ p {
 
 .phone {
     position: relative;
-    left: 20px;
+    left: 40px;
     width: 59px;
     height: 59px;
     border-radius: 50%;
@@ -206,7 +203,7 @@ p {
 
 .bubble {
     position: relative;
-    left: 40px;
+    left: 80px;
     width: 59px;
     height: 59px;
     border-radius: 50%;
@@ -215,7 +212,7 @@ p {
 
 .star {
     position: relative;
-    left: 60px;
+    left: 120px;
     width: 59px;
     height: 59px;
     border-radius: 50%;
@@ -239,48 +236,41 @@ p {
     top: 35px;
 }
 
-.text1, .text2, .text3, .text4, .text5, .text6 {
+.text1 {
     position: relative;
     left: 20px;
-	width: 220px;
-	
+    width: 220px;   	
 }
 
 .text2 {
     position: relative;
-    left: 40px;
+    left: 60px;
 	width: 220px;
-	
 }
 
 .text3 {
     position: relative;
-    left: 60px;
+    left: 100px;
 	width: 220px;
-	
 }
 
 .text4 {
     position: relative;
     left: 20px;
 	width: 220px;
-	
 }
 
 .text5 {
     position: relative;
-    left: 40px;
+    left: 60px;
 	width: 220px;
-	
 }
 
  .text6 {
     position: relative;
-    left: 60px;
+    left: 100px;
 	width: 220px;
-	
 }
-
 
 
 
