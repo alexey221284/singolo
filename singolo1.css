@@ -178,7 +178,7 @@ p {
 }
 
 .bulb {
-    float:left;
+    position: relative;
     left: 40px;
     width: 59px;
     height: 59px;
@@ -188,7 +188,7 @@ p {
 
 .heart {
     position: relative;
-    left: 40px;
+    left: 60px;
     width: 59px;
     height: 59px;
     border-radius: 50%;
@@ -206,7 +206,7 @@ p {
 
 .bubble {
     position: relative;
-    left: 20px;
+    left: 40px;
     width: 59px;
     height: 59px;
     border-radius: 50%;
@@ -215,7 +215,7 @@ p {
 
 .star {
     position: relative;
-    left: 20px;
+    left: 60px;
     width: 59px;
     height: 59px;
     border-radius: 50%;
@@ -240,8 +240,48 @@ p {
 }
 
 .text1, .text2, .text3, .text4, .text5, .text6 {
-    float: left;
+    position: relative;
+    left: 20px;
+	width: 220px;
+	
+}
+
+.text2 {
+    position: relative;
     left: 40px;
 	width: 220px;
 	
 }
+
+.text3 {
+    position: relative;
+    left: 60px;
+	width: 220px;
+	
+}
+
+.text4 {
+    position: relative;
+    left: 20px;
+	width: 220px;
+	
+}
+
+.text5 {
+    position: relative;
+    left: 40px;
+	width: 220px;
+	
+}
+
+ .text6 {
+    position: relative;
+    left: 60px;
+	width: 220px;
+	
+}
+
+
+
+
+
