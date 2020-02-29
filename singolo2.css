@@ -1,0 +1,9 @@
+body {
+    margin:0;
+}
+
+.wrapper {
+    width: 1020px;
+    height: 870px;
+    background-color: #2d303a;
+}
