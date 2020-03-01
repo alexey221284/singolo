@@ -5,5 +5,91 @@ body {
 .wrapper {
     width: 1020px;
     height: 870px;
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -510px;
     background-color: #2d303a;
+}
+
+h1, p {
+    background-color: white;
+    margin: 0;
+}
+
+.a1, .a2, .a3, .b1, .b2, .b3, .c1, .c2, .c3, .d1, .d2, .d3 {
+    width: 220px;
+    height: 187px;
+    background-color: #464b5e;
+    margin: 0;    
+}
+
+.a1 {
+    grid-area: a1;
+    background-image: url(assets/gallery/a1.png);       
+}
+
+.a2 {
+    grid-area: a2;
+    background-image: url(assets/gallery/a2.png);
+}
+
+.a3 {
+    grid-area: a3;
+    background-image: url(assets/gallery/a3.png);
+}
+
+.b1 {
+    grid-area: b1;
+    background-image: url(assets/gallery/b1.png);
+
+}
+
+.b2 {
+    grid-area: b2;
+    background-image: url(assets/gallery/b2.png);
+}
+
+.b3 {
+    grid-area: b3;
+    background-image: url(assets/gallery/b3.png);
+}
+
+.c1 {
+    grid-area: c1;
+    background-image: url(assets/gallery/c1.png);
+}
+
+.c2 {
+    grid-area: c2;
+    background-image: url(assets/gallery/c2.png);
+}
+
+.c3 {
+    grid-area: c3;
+    background-image: url(assets/gallery/c3.png);
+}
+
+.d1 {
+    grid-area: d1;
+    background-image: url(assets/gallery/d1.png);
+}
+.d2 {
+    grid-area: d2;
+    background-image: url(assets/gallery/d2.png);
+}
+
+.d3 {
+    grid-area: d3;
+    background-image: url(assets/gallery/d3.png);
+}
+
+.gallery {
+    display: grid;
+    grid-gap: 20px 20px;
+    justify-items: center;
+    align-items: center;   
+    grid-template-areas:    
+            "a1 b1 c1 d1"
+            "a2 b2 c2 d2"
+            "a3 b3 c3 d3";               
 }
