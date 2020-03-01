@@ -1,5 +1,7 @@
 body {
-    margin:0;
+    margin: 0;
+    padding: 0;
+
 }
 
 .wrapper {
@@ -8,24 +10,102 @@ body {
     position: absolute;
     left: 50%;
     margin: 0 0 0 -510px;
-    background-color: #2d303a;
+    background-color: #2d303a;    
 }
 
-h1, p {
-    background-color: white;
-    margin: 0;
+.wrapper__portfolio__text {
+    width: 940px;
+    height: 57px;
+    position: relative;
+    top: 48px;
+    left: 40px;    
+}
+
+.logo {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;    
+}
+
+.portfolio__text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left; 
+    position: relative;  
+    top: 7px;
+}
+
+.wrapper__buttons {
+    position: relative;
+    left: 40px;
+    top: 78px;
+}
+
+.gallery {
+    position: relative;
+    left: 40px;
+    top: 97px;    
+}
+
+.button1, .button2, .button3, .button4 {
+    height: 22px;
+    border-radius: 5px;
+    background-color: #0f0f0f;
+    border: 1px solid #666d89;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: center;
+    margin: 0; 
+    padding: 0;   
+}
+
+.button1:hover, .button2:hover, .button3:hover, .button4:hover {
+    background-color: #0f0f0f;
+    border: 1px solid #c5c5c5;
+    color: #dedede;
+    cursor: pointer;
+}
+
+.button1 {
+    width: 29px;     
+}
+
+.button2 {
+    width: 78px;
+    margin-left: 7px;       
+}
+
+.button3 {
+    width: 93px;
+    margin-left: 7px;        
+}
+
+.button4 {
+    width: 57px;
+    margin-left: 6px;      
 }
 
 .a1, .a2, .a3, .b1, .b2, .b3, .c1, .c2, .c3, .d1, .d2, .d3 {
     width: 220px;
     height: 187px;
-    background-color: #464b5e;
-    margin: 0;    
+    background-color: #464b5e;          
 }
 
 .a1 {
     grid-area: a1;
-    background-image: url(assets/gallery/a1.png);       
+    background-image: url(assets/gallery/a1.png);
+    background-position-x: -8px;
+    background-position-y: -10px;
+        
 }
 
 .a2 {
@@ -41,6 +121,8 @@ h1, p {
 .b1 {
     grid-area: b1;
     background-image: url(assets/gallery/b1.png);
+    background-position-x: -82px;
+    background-position-y: -43px;
 
 }
 
@@ -85,9 +167,10 @@ h1, p {
 
 .gallery {
     display: grid;
-    grid-gap: 20px 20px;
-    justify-items: center;
-    align-items: center;   
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-template-rows: 187px 187px 187px;
     grid-template-areas:    
             "a1 b1 c1 d1"
             "a2 b2 c2 d2"
