@@ -108,6 +108,14 @@ textarea::-webkit-input-placeholder {
     color: #f48c8f;
 }
 
+#forminputs_name:invalid {
+    border: red solid 2px;
+}
+
+#forminputs_email:invalid {
+    border: red solid 2px;
+}
+
 .wrapper2 {
     display: flex;
     flex-direction: row;
