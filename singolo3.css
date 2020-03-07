@@ -26,40 +26,46 @@ body {
     font-family: "Lato";
     font-weight: 900;
     text-align: left;
+    letter-spacing: normal;
     position: relative;
     left: 40px;
     top: 60px;
-    margin: 0;        
+    margin-top: 7px;       
 }
 
 .text1 {   
+    width: 960px;
     font-size: 18px;
     line-height: 30px;
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 300;
     text-align: left;
+    letter-spacing: normal;
     position: relative;
     left: 40px;
-    top: 120px;
+    top: 63px;    
     margin: 0; 
+    padding: 0px;
 }
 
 #forminputs_name, #forminputs_email, #forminputs_subject {
-    width: 619px;
-    height: 38px;
+    width: 603px;
+    height: 36px;
     border-radius: 5px;
     background-color: #d6564f;    
     border: 1px none;
-    margin-bottom: 8px;
+    margin-bottom: 16px;       
 }
 
 #forminputs_describe {
-    width: 619px;
-    height: 202px;
+    width: 600px;
+    height: 192px;
     border-radius: 5px;
+    border: 0px;
     background-color: #d6564f;
-    margin-bottom: 8px;
+    margin-top: 0px;
+    padding-top: 8px;
     resize: none;
 }
 
@@ -76,6 +82,7 @@ body {
     font-weight: 400;
     text-align: center;
     margin: 0px;
+    margin-top: 8px;
 }
 
 #forminputs_submit:hover {
@@ -90,6 +97,7 @@ color: #f48c8f;
 font-family: "Lato";
 font-weight: 400;
 text-align: left;
+padding-left: 16px;
 }
 
 input::-webkit-input-placeholder {
@@ -106,7 +114,7 @@ textarea::-webkit-input-placeholder {
     width: 940px;
     position: relative;
     left: 40px;
-    top: 140px;   
+    top: 106px;   
 }
 
 .forminputs {
@@ -123,8 +131,9 @@ textarea::-webkit-input-placeholder {
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 400;
-    text-align: left;
+    text-align: justify;
     left: 20px;
+    letter-spacing: 0.1px;   
 }
 
 .contactinfo h2 {
@@ -135,11 +144,17 @@ textarea::-webkit-input-placeholder {
     font-weight: 900;
     text-align: left;
     margin: 0;
+    letter-spacing: 0.4px;
 }
 
-ul, li {
-    list-style-type: none;    
-    padding: 0;
+ul {
+    list-style-type: none;   
+    margin: 0px;
+    padding: 6px 0px 0px 2px;
+}
+
+li {
+    padding: 0px;
 }
 
 a {
@@ -163,12 +178,13 @@ a:link, a:hover, a:visited, a:active {
 
 .copyright {
     position: relative;
-    left: 40px;
+    left: 41px;
+    letter-spacing: normal;
 }
 
 .socialicons {
     position: relative;
-    right: 40px;
+    right: 35px;
 }
 
 .facebook, .google, .twitter, .linkedin {
@@ -177,6 +193,8 @@ height: 32px;
 border-radius: 16px;
 border: 1px solid #666d89;
 background-color: #2d303a;
+margin-right: 4px;
+padding-top: 2px;
 }
 
 .facebook:hover, .google:hover, .twitter:hover, .linkedin:hover {
