@@ -8,8 +8,7 @@ body {
     height: 1195px;
     position: absolute;
     left: 50%;
-    margin: 0 0 0 -510px;
-    
+    margin: 0 0 0 -510px;    
 }
 
 .header {
@@ -49,6 +48,42 @@ ul.navigation li{
     text-decoration: none;
 	outline: none;
     }    
+
+ul.navigation li.active {
+    background: #f06c64;
+    color: #494e62;
+}
+
+ul.navigation li:not(.active):hover {
+    cursor: pointer;
+    color: #f06c64;
+}
+
+/*Popup Window
+
+#message-block {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    background-color: gray;
+    
+}
+
+#message-block.hidden_popup {
+    display: none;
+}
+
+#message {
+    position: absolute;   
+    top: 50%;
+    left: 50%;
+    border: 2px solid black; 
+    text-align: center;
+}
+
+ End Popup Window*/
     
 a:link {
     color: #ffffff;
@@ -72,8 +107,6 @@ a:active {
 	outline: none;
 }
 
-  
-
 .slider {background: #f06c64;
 	     width: 1020px;
          height: 585px;
@@ -87,6 +120,7 @@ a:active {
     position: relative;
     left: 40px;
     top: 280px;
+    cursor: pointer;
 }
 
 .mobile-vert {
@@ -113,6 +147,7 @@ a:active {
     position: absolute;
     left: 965px;
     top: 376px;
+    cursor: pointer;
 }
 
 .services {

@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">    
     <title>Singolo</title>
 </head>
-<body>
+<body>    
 
 <!-- Singolo 1 -->
 
     <div class="single_wrapper">
         <header class="header">
-            <div class="header__wrapper">
+            <div>
                 <h1><a href="#" class="logo"></a></h1>
-                <nav class="header__navigation">
-                    <ul class="navigation">
-                        <li><a href="#home">home</a></li>
-                        <li><a href="#services">services</a></li>
-                        <li><a href="#portfolio">portfolio</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#contact">contact</a></li>
+                <nav>
+                    <ul class="navigation" id="menu">                        
+                        <li onclick="location.href='#home';" class="active">home</li>
+                        <li onclick="location.href='#services';">services</li>
+                        <li onclick="location.href='#portfolio';">portfolio</li>
+                        <li onclick="location.href='#about';">about</li>
+                        <li onclick="location.href='#contact';">contact</li>                                               
                     </ul>
                 </nav>
             </div>
@@ -29,18 +29,21 @@
         
         <section class="slider">
             <div class="slider_wrapper">
-                <div class="left"><a href="#"><img src="assets/left.png"></a>
+                <div class="left">
+                    <img onclick="Slide()" src="assets/left.png">
                 </div>
-                <div class="mobile-vert">
+                <img src="assets/slider/slide1.png" name="pic">
+                <!--<div class="mobile-vert">
                 </div>
                 <div class="mobile-goriz">
-                </div>
-                <div class="right"><a href="#"><img src="assets/right.png"></a>
+                </div>-->
+                <div class="right">
+                    <img onclick="Slide()" src="assets/right.png">
                 </div>
             </div>
         
         </section> 
-        <section class="services">
+        <section class="services" id="services">
             <div class="wrapper_serv">
             <h1>Our Services</h1>
             <h2>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</h2>
@@ -94,9 +97,9 @@
 
 <!-- Singolo 2 -->
 
-<div class="second_wrapper">
+<div class="second_wrapper" id="portfolio">
     <div class="wrapper__portfolio__text">
-        <h1 class="logo2">Portfolio</h1>
+        <h1 class="logo2" >Portfolio</h1>
         <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
     </div>
     
@@ -125,7 +128,7 @@
     <div class="bgbottom">        
     </div>
 
-   <div class="wrapper__about">
+   <div class="wrapper__about" id="about">
         <div class="head_about">
             <h1>About Us</h1>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -207,7 +210,7 @@
                     <input type="button" value="Submit" id="forminputs_submit">
                 </form>
             </div>
-            <div class="contactinfo">
+            <div class="contactinfo" id="contact">
                 <h2>Contact Information</h2>
                 <p class="text32">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. 
                 Fusce vitae aliquam tellus. Proin sit amet volutpat libero. 
@@ -234,6 +237,19 @@
     </footer>
 
 </div>
-    
+
+<!--Popup
+
+<div id="message_block" class="hidden">
+    <div id="message" class="hidden">
+        <p>Text: <span id="result"></span></p>
+        <br>
+        <button id="close-btn">OK</button>
+    </div>
+</div>
+
+End Popup-->
+
+<script src="script.js"></script>    
 </body>
 </html>
