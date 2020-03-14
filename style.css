@@ -114,6 +114,15 @@ a:active {
          border-bottom: 15px solid #ea676b;
 }
 
+#img_home {     
+    position: relative;
+    width: 42px;
+    height: 43px;
+    left: 198px;
+    top: -145px;
+    z-index: 6;
+}
+
 .left {
     width: 16px;
     height: 27px;
@@ -395,7 +404,8 @@ p {
 }
 
 .button1 {
-    width: 29px;     
+    width: 29px;   
+      
 }
 
 .button2 {
@@ -417,6 +427,15 @@ p {
     width: 220px;
     height: 187px;
     background-color: #464b5e;          
+}
+
+.a1:hover, .a2:hover, .a3:hover, .b1:hover, .b2:hover, .b3:hover, .c1:hover, .c2:hover, .c3:hover, .d1:hover, .d2:hover, .d3:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.a1:active, .a2:active, .a3:active, .b1:active, .b2:active, .b3:active, .c1:active, .c2:active, .c3:active, .d1:active, .d2:active, .d3:active{
+    border: 5px solid #F06C64;
 }
 
 .a1 {
