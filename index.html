@@ -32,12 +32,10 @@
                 <div class="left">
                     <img onclick="Slide()" src="assets/left.png">
                 </div>
-                <img src="assets/slider/slide1.png" name="pic">
-                <img src="assets/home.png" name="img_home" id="img_home" onclick="home()">
-                <!--<div class="mobile-vert">
-                </div>
-                <div class="mobile-goriz">
-                </div>-->
+                <img src="assets/slider/slide1.png" name="pic" id="pic">
+                <img src="assets/slider/home.png" name="img_home" id="img_home" onclick="home()">
+                <img src="assets/slider/home.png" name="img_home_goriz" id="img_home_goriz" onclick="home()">
+                <img src="assets/slider/normal_display.png" name = "display" id="display">                
                 <div class="right">
                     <img onclick="Slide()" src="assets/right.png">
                 </div>                
@@ -203,12 +201,12 @@
     
         <div class="wrapper2">
             <div class="forminputs">
-                <form action="/action_page.php" method="get" target="_self">
+                <form ondblclick = click() target="_self">
                     <input type="text" name="forminputs_name" id="forminputs_name" placeholder="Name (Required)" required><br>
                     <input type="email" name="forminputs_email" id="forminputs_email"  placeholder="Email (Required)" required><br>
                     <input type="text" name="forminputs_subject" id="forminputs_subject" placeholder="Subject"><br>
                     <textarea name="forminputs_describe" id="forminputs_describe" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea><br>
-                    <input type="submit" value="Submit" id="forminputs_submit" formmethod="POST">
+                    <input value="Submit" id="forminputs_submit" onclick = "popup()">
                 </form>
             </div>
             <div class="contactinfo" id="contact">
@@ -239,17 +237,18 @@
 
 </div>
 
-<!--Popup
+<!--Popup-->
 
-<div id="message_block" class="hidden">
-    <div id="message" class="hidden">
-        <p>Text: <span id="result"></span></p>
-        <br>
-        <button id="close-btn">OK</button>
+<div class="b-popup" id="message_block">
+    <div class="b-popup-content"> 
+        <p class="popup_text">Письмо отправлено</p>       
+        <p class="popup_text" id="result"></p>
+        <p class="popup_text" id="description"></p>
+        <button id="close-btn" onclick="closebutton()">OK</button>        
     </div>
 </div>
 
-End Popup-->
+<!--End Popup-->
 
 <script src="script.js"></script>    
 </body>

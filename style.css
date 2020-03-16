@@ -59,31 +59,56 @@ ul.navigation li:not(.active):hover {
     color: #f06c64;
 }
 
-/*Popup Window
+/*popup style*/
 
-#message-block {
+.b-container{
+    width:300px;
+    height:200px;
+    background-color: #ccc;
+    margin:0px auto;
+    padding:10px;    
+    color: #fff;
+    z-index: -1;    
+}
+
+
+.b-popup{
+    width:100%;
+    height: 2000px;
+    background-color: rgba(f,f,f,0.5);
+    overflow:hidden;
+    position:fixed;
+    top: 0px;
+    z-index: -1;
+}
+.b-popup .b-popup-content{    
+    width: 20%;
+    height: 160px;       
+    background-color: #f06c64;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+    z-index: -1;
+}
+
+.b-popup-content {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: 50%;
-    left: 50%;
-    background-color: gray;
-    
+    left: 40%;
+    top: 250px;
 }
 
-#message-block.hidden_popup {
-    display: none;
+.popup_text {
+    color: #494e62;
+    font-size: 12px;
+    line-height: 22px;    
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    position: relative;
+    left: 10%;
 }
 
-#message {
-    position: absolute;   
-    top: 50%;
-    left: 50%;
-    border: 2px solid black; 
-    text-align: center;
-}
+/*end popup*/
 
- End Popup Window*/
     
 a:link {
     color: #ffffff;
@@ -115,13 +140,30 @@ a:active {
 }
 
 #img_home {     
-    position: relative;
+    position: absolute;
     width: 42px;
     height: 43px;
     left: 198px;
-    top: -145px;
-    z-index: 6;
+    top: 582px;
+    z-index: 7; 
     cursor: pointer;
+}
+
+#img_home_goriz {     
+    position: absolute;
+    width: 42px;
+    height: 43px;
+    left: 432px;
+    top: 385px;
+    z-index: 7;
+    cursor: pointer;
+}
+
+#display {
+    position: absolute;
+    left: 111px;
+    top: 176px;
+    /* z-index: 2; */
 }
 
 .left {
@@ -792,9 +834,27 @@ p {
     margin-top: 8px;
 }
 
-#forminputs_submit:hover {
+#forminputs_submit:hover, #close-btn:hover {
     cursor: pointer;
     border: 1px solid #f48c8f;
+}
+
+#close-btn {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    bottom: 5%;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #d6564f;    
+    border: 1px none;    
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: center;
+    margin: 0px;    
 }
 
 #forminputs_name, #forminputs_email, #forminputs_subject, #forminputs_describe {
