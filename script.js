@@ -18,9 +18,9 @@ function Slide() {
     if (i > 1) i = 0;
     pic.src = slideshow[i]
     if (i === 0) {
-        document.getElementById('img_home').style.zIndex = '7';
-        document.getElementById('img_home_goriz').style.zIndex = '7';
-        document.getElementById('display').style.zIndex = '2';
+        document.getElementById('img_home').style.zIndex = '7';        
+        document.getElementById('img_home_goriz').style.zIndex = '7';        
+        document.getElementById('display').style.zIndex = '2';       
 
     } else {
         document.getElementById('img_home').style.zIndex = '-1';
@@ -46,6 +46,10 @@ function popup() {
     elem5.style.zIndex = '8';
     const subject = document.getElementById('forminputs_subject').value.toString();
     const desc = document.getElementById('forminputs_describe').value.toString();
+    const name555 = document.getElementById('forminputs_name').value.toString();
+    const email555 = document.getElementById('forminputs_email').value.toString();
+
+    
 
     if (/^\s*$/.test(subject)) {
         document.getElementById('result').innerText = 'Без темы';
@@ -56,13 +60,20 @@ function popup() {
         document.getElementById('description').innerText = 'Без описания';
     }
     else document.getElementById('description').innerText = 'Описание:' + desc.toString();
+
+    if (/^\s*$/.test(name555) || /^\s*$/.test(email555)) {
+        document.getElementById('stroka').innerText = 'Письмо не отправлено - заполните обязательные поля';
+        document.getElementById('description').innerText = '';
+        document.getElementById('result').innerText = '';            
+    } else {
+        document.getElementById('stroka').innerText = 'Письмо отправлено';
+    }  
+    
 }
-
-
-
 
 function closebutton() {
     document.getElementById('message_block').style.zIndex = '-1';
+    document.getElementById('headform').reset();
 }
 
 function allpicture() {
@@ -84,17 +95,3 @@ function artwork() {
     let elem4 = document.getElementById("gallery");
     elem4.style.gridTemplateAreas = '"a3 b1 b2 b3" "c1 c2 c3 d1" "d2 d3 a1 a2"';
 };
-
-/* Popup
-
-BUTTON.addEventListener('click', () => {
-
-
-
-
-});
-CLOSE_BUTTON.addEventListener('click', () => {
-    document.getElementById('result').innerText = '';
-    document.getElementById('message_block').classList.add('hidden');
-});
-*/

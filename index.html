@@ -201,7 +201,7 @@
     
         <div class="wrapper2">
             <div class="forminputs">
-                <form ondblclick = click() target="_self">
+                <form target="_self" id="headform">
                     <input type="text" name="forminputs_name" id="forminputs_name" placeholder="Name (Required)" required><br>
                     <input type="email" name="forminputs_email" id="forminputs_email"  placeholder="Email (Required)" required><br>
                     <input type="text" name="forminputs_subject" id="forminputs_subject" placeholder="Subject"><br>
@@ -241,7 +241,7 @@
 
 <div class="b-popup" id="message_block">
     <div class="b-popup-content"> 
-        <p class="popup_text">Письмо отправлено</p>       
+        <p class="popup_text" id="stroka"></p>       
         <p class="popup_text" id="result"></p>
         <p class="popup_text" id="description"></p>
         <button id="close-btn" onclick="closebutton()">OK</button>        
