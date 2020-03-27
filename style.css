@@ -82,7 +82,7 @@ ul.navigation li:not(.active):hover {
     z-index: -1;
 }
 .b-popup .b-popup-content{    
-    width: 24%;
+    width: 30%;
     height: 160px;       
     background-color: #f06c64;
     border-radius:5px;
@@ -92,7 +92,7 @@ ul.navigation li:not(.active):hover {
 
 .b-popup-content {
     position: absolute;
-    left: 38%;
+    left: 35%;
     top: 250px;
 }
 
@@ -377,11 +377,11 @@ p {
     left: 50%;
     margin: 0 0 0 -510px;
     background-color: #2d303a;
-    top: 1195px;
-        
+    top: 1187px;
+    border-bottom: 6px solid #323746;        
 }
 
-.wrapper__portfolio__text {
+    .wrapper__portfolio__text {
     width: 940px;
     height: 57px;
     position: relative;
@@ -579,21 +579,14 @@ p {
             "a3 b3 c3 d3";               
 }
 
-.bgbottom {
-    position: relative;
-    top: 164px;
-    border-bottom: 6px solid #323746;
-}
-
-
 .wrapper__about {
     width: 1020px;
     height: 728px;
     background-color: #f2f2f2;
     position: relative;
-    top: 142px;
+    top: 98px;
     margin: 0;
-
+    border-bottom: 6px solid #ffffff;
 }
 
 .head_about {
@@ -741,12 +734,6 @@ p {
     cursor: pointer;
 }
 
-.bgbottom2 {
-    position: relative;
-    top: 142px;
-    border-bottom: 6px solid #ffffff;
-}
-
 /* Singolo 3 */
 
 .third_wrapper {
@@ -763,7 +750,7 @@ p {
     position: relative;
     margin-left: -510px;    
     left:50%;
-    top: calc(1195px + 1604px); 
+    top: calc(1195px + 1544px); 
                   
 }
 
@@ -999,5 +986,139 @@ padding-top: 2px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; 
-    top: calc(1195px + 1604px);    
+    top: calc(1195px + 1544px);    
+}
+
+/* Responsive - Tablet - 768px */
+
+@media (max-width: 768px) {
+
+    .single_wrapper {
+        width: 768px;    
+        margin: 0 0 0 -384px;    
+    }
+
+    .header {
+        width: 768px;        
+    }
+
+    ul.navigation li{    
+        left: 330px;  
+    }  
+
+    #pic {
+        width: 768px;        
+    }
+
+    .slider {
+        width: 768px;
+    }
+
+    #img_home {     
+        width: 34px;
+        height: 35px;
+        left: 148px;
+        top: 466px;   
+    }
+
+   #img_home_goriz {     
+        position: absolute;
+        width: 42px;
+        height: 43px;
+        left: 432px;
+        top: 385px;
+        z-index: 7;
+        cursor: pointer;
+}
+
+   #display {
+        position: absolute;
+        left: 111px;
+        top: 176px;    
+   }
+
+   .left {
+        width: 16px;
+        height: 27px;
+        position: relative;
+        left: 40px;
+        top: 280px;
+        cursor: pointer;
+   }
+
+   .right {   
+        left: 710px;
+        top: 376px;    
+    }
+
+    .services {
+        width: 768px;    
+    }
+
+    .second_wrapper {
+        width: 768px;
+        height: 1020px;
+        margin: 0 0 0 -384px;            
+    }
+
+    .wrapper__portfolio__text {
+        width: 688px;      
+    }
+
+    .gallery {    
+        grid-template-areas:    
+            "a1 b1 c1"
+            "d1 a2 b2"
+            "c2 d2 a3"
+            "b3 c3 d3";               
+    }
+
+    .wrapper__about {
+        width: 768px;       
+    }
+
+    .head_about {
+        width: 688px;        
+        left: 40px;
+        top: 67px;    
+    }
+
+    .fotogallary {        
+        grid-template-columns: 222px 222px 222px;                      
+    }
+
+    .foto1, .foto2, .foto3 {
+        background-position-x: -40px;
+    }
+
+    .getaquote {
+        width: 768px;        
+        margin-left: -384px; 
+        top: calc(1195px + 1720px);                
+    }
+
+    .text31 {   
+        width: 688px;        
+        left: 40px;        
+    }
+
+    #forminputs_name, #forminputs_email, #forminputs_subject, #forminputs_describe {
+        width: 440px;              
+    }
+    
+    .wrapper2 {        
+        width: 688px;        
+        top: 80px;   
+    }
+
+    .contactinfo {
+        left: 10px; 
+    }
+
+    .footer {
+        width: 768px;        
+        margin-left: -384px; 
+        top: calc(1195px + 1720px);             
+    }   
+
 }
