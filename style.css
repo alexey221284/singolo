@@ -58,57 +58,6 @@ ul.navigation li:not(.active):hover {
     cursor: pointer;
     color: #f06c64;
 }
-
-/*popup style*/
-
-.b-container{
-    width:300px;
-    height:200px;
-    background-color: #ccc;
-    margin:0px auto;
-    padding:10px;    
-    color: #fff;
-    z-index: -1;    
-}
-
-
-.b-popup{
-    width:100%;
-    height: 2000px;
-    background-color: rgba(f,f,f,0.5);
-    overflow:hidden;
-    position:fixed;
-    top: 0px;
-    z-index: -1;
-}
-.b-popup .b-popup-content{    
-    width: 30%;
-    height: 160px;       
-    background-color: #f06c64;
-    border-radius:5px;
-    box-shadow: 0px 0px 10px #000;
-    z-index: -1;
-}
-
-.b-popup-content {
-    position: absolute;
-    left: 35%;
-    top: 250px;
-}
-
-.popup_text {
-    color: white;
-    font-size: 12px;
-    line-height: 22px;    
-    font-family: "Lato";
-    font-weight: 400;
-    text-align: left;
-    position: relative;
-    left: 10%;
-}
-
-/*end popup*/
-
     
 a:link {
     color: #ffffff;
@@ -144,7 +93,7 @@ a:active {
     width: 42px;
     height: 43px;
     left: 198px;
-    top: 582px;
+    top: 558px;
     z-index: 7; 
     cursor: pointer;
 }
@@ -154,7 +103,7 @@ a:active {
     width: 42px;
     height: 43px;
     left: 432px;
-    top: 385px;
+    top: 358px;
     z-index: 7;
     cursor: pointer;
 }
@@ -162,16 +111,16 @@ a:active {
 #display {
     position: absolute;
     left: 111px;
-    top: 176px;    
+    top: 149px;    
 }
 
 .left {
     width: 16px;
     height: 27px;
-    position: relative;
+    position: absolute;
     left: 40px;
-    top: 280px;
-    cursor: pointer;
+    top: 376px;
+    cursor: pointer;    
 }
 
 .mobile-vert {
@@ -257,7 +206,7 @@ p {
     line-height: 22px;
     font-family: "Lato";
 }
-    
+   
 .pen {
     position: relative;
     left: 40px;
@@ -384,7 +333,7 @@ p {
     .wrapper__portfolio__text {
     width: 940px;
     height: 57px;
-    position: relative;
+    position: absolute;
     top: 46px;
     left: 40px;    
 }
@@ -406,21 +355,21 @@ p {
     font-family: "Lato";
     font-weight: 300;
     text-align: left; 
-    position: relative;  
-    top: 8px;
+    position: absolute;  
+    top: 30px;
     left: 0px; 
 }
 
 .wrapper__buttons {
-    position: relative;
+    position: absolute;
     left: 40px;
-    top: 75px;
+    top: 130px;
 }
 
 .gallery {
-    position: relative;
+    position: absolute;
     left: 40px;
-    top: 94px;      
+    top: 170px;      
 }
 
 .button1, .button2, .button3, .button4 {
@@ -583,8 +532,8 @@ p {
     width: 1020px;
     height: 728px;
     background-color: #f2f2f2;
-    position: relative;
-    top: 98px;
+    position: absolute;
+    top: 870px;
     margin: 0;
     border-bottom: 6px solid #ffffff;
 }
@@ -592,7 +541,7 @@ p {
 .head_about {
     width: 940px;
     height: 57px;
-    position: relative;
+    position: absolute;
     left: 40px;
     top: 67px;    
 }
@@ -621,7 +570,7 @@ p {
 .fotogallary {
     position: relative;
     left: 40px;
-    top: 160px;    
+    top: 200px;    
 }
 
 .foto1 {
@@ -750,7 +699,7 @@ p {
     position: relative;
     margin-left: -510px;    
     left:50%;
-    top: calc(1195px + 1544px); 
+    top: calc(1195px + 1578px); 
                   
 }
 
@@ -762,7 +711,7 @@ p {
     font-weight: 900;
     text-align: left;
     letter-spacing: normal;
-    position: relative;
+    position: absolute;
     left: 40px;
     top: 60px;
     margin-top: 18px;       
@@ -777,9 +726,9 @@ p {
     font-weight: 300;
     text-align: left;
     letter-spacing: normal;
-    position: relative;
+    position: absolute;
     left: 40px;
-    top: 63px;    
+    top: 120px;    
     margin: 0; 
     padding: 0px;
 }
@@ -872,21 +821,23 @@ textarea::-webkit-input-placeholder {
 .wrapper2 {
     display: flex;
     flex-direction: row;
-    width: 940px;
-    position: relative;
+    width: 840px;
+    position: absolute;
     left: 40px;
     top: 106px;   
 }
 
 .forminputs {
-    width: 620px;    
+    width: 620px;  
+    top: 100px;  
     position: relative;    
 }
 
 .contactinfo {
     position: relative;
-    width: 300px;
+    width: 400px;
     height: 175px;
+    top: 100px;
     font-size: 12px;
     line-height: 22px;
     color: #f0d8d9;
@@ -929,6 +880,7 @@ a:link, a:hover, a:visited, a:active {
 }
 
 .text32 {
+    width: 300px;
     font-size: 12px;
     line-height: 22px;
     color: #f0d8d9;
@@ -986,139 +938,275 @@ padding-top: 2px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; 
-    top: calc(1195px + 1544px);    
+    top: calc(1195px + 1578px);    
 }
+
+/*popup style*/
+
+.b-container{
+    width:300px;
+    height:200px;
+    background-color: #ccc;
+    margin:0px auto;
+    padding:10px;    
+    color: #fff;
+    z-index: -1;    
+}
+
+
+.b-popup{
+    width:1020px;
+    height: 2000px;
+    background-color: rgba(f,f,f,0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    z-index: -1;
+}
+
+.b-popup .b-popup-content{    
+    width: 30%;
+    height: 160px;       
+    background-color: #f06c64;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+    z-index: -1;
+}
+
+.b-popup-content {
+    position: absolute;
+    left: 50%;
+    top: 250px;
+}
+
+.popup_text {
+    color: white;
+    font-size: 12px;
+    line-height: 22px;    
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    position: relative;
+    left: 10%;
+}
+
+/*end popup*/
+
 
 /* Responsive - Tablet - 768px */
 
 @media (max-width: 768px) {
 
-    .single_wrapper {
-        width: 768px;    
-        margin: 0 0 0 -384px;    
+    .single_wrapper {  
+        width: 100vw;      
+        left: 0;
+        margin: 0;    
     }
 
     .header {
-        width: 768px;        
+        width: 100vw;        
     }
 
     ul.navigation li{    
-        left: 330px;  
+        left: 35vw;  
+        margin: 0 1vw 0 1vw;
     }  
 
     #pic {
-        width: 768px;        
+        width: 100vw;
     }
 
     .slider {
-        width: 768px;
+        width: 100vw;
+        height: 440px;
     }
 
     #img_home {     
-        width: 34px;
-        height: 35px;
-        left: 148px;
-        top: 466px;   
+        width: 4vw;
+        height: 4vw;
+        left: 19.3vw;
+        top: 57.3vw;   
     }
 
-   #img_home_goriz {     
-        position: absolute;
-        width: 42px;
-        height: 43px;
-        left: 432px;
-        top: 385px;
-        z-index: 7;
-        cursor: pointer;
+   #img_home_goriz {        
+        width: 4vw;
+        height: 4vw;
+        left: 42.4vw;
+        top: 38.4vw;
+        
 }
 
-   #display {
-        position: absolute;
-        left: 111px;
-        top: 176px;    
+   #display {   
+        width:  76.2vw;   
+        left: 10.8vw;
+        top: 17.5vw;    
    }
 
    .left {
-        width: 16px;
-        height: 27px;
-        position: relative;
-        left: 40px;
-        top: 280px;
-        cursor: pointer;
+        width: 2vw;              
+        left: 5vw;
+        top: 40vw;
+        z-index: 7;       
    }
 
    .right {   
-        left: 710px;
-        top: 376px;    
+        left: 92vw;
+        top: 40vw;   
+        z-index: 7;
     }
 
     .services {
-        width: 768px;    
+        width: 100vw;
+        height: 495px;        
     }
 
+    .heart, .text3, .star, .text6 {
+        display: none;
+    }
+
+
+
     .second_wrapper {
-        width: 768px;
+        width: 100vw;
         height: 1020px;
-        margin: 0 0 0 -384px;            
+        left: 0;
+        margin: 0; 
+        top: 1042px;           
     }
 
     .wrapper__portfolio__text {
-        width: 688px;      
+        width: 90vw;
+        left: 5vw;      
     }
 
-    .gallery {    
-        grid-template-areas:    
+    .gallery {
+        display: grid;
+        grid-column-gap: 2.6vw;        
+        grid-template-columns: 28.6vw 28.6vw 28.6vw;        
+        grid-template-areas:   
             "a1 b1 c1"
             "d1 a2 b2"
             "c2 d2 a3"
             "b3 c3 d3";               
     }
 
+    .a1, .a2, .a3, .b1, .b2, .b3, .c1, .c2, .c3, .d1, .d2, .d3 {
+        width: 28.6vw;                      
+    }
+
+    .button1, .button2, .button3, .button4 {
+        display: none;
+    }
+
     .wrapper__about {
-        width: 768px;       
+        width: 100vw;
+        top: 1026px;      
     }
 
     .head_about {
-        width: 688px;        
-        left: 40px;
+        width: 90vw;        
+        left: 5vw;
         top: 67px;    
     }
 
     .fotogallary {        
-        grid-template-columns: 222px 222px 222px;                      
+        grid-template-columns: 29vw 29vw 29vw;                      
     }
 
     .foto1, .foto2, .foto3 {
-        background-position-x: -40px;
+        background-position-x: -5vw;
     }
 
     .getaquote {
-        width: 768px;        
-        margin-left: -384px; 
-        top: calc(1195px + 1720px);                
+        width: 100vw;        
+        margin: 0; 
+        left: 0;
+        top: 2770px;                
     }
 
     .text31 {   
-        width: 688px;        
-        left: 40px;        
+        width: 90vw;        
+        left: 5vw;        
     }
 
     #forminputs_name, #forminputs_email, #forminputs_subject, #forminputs_describe {
-        width: 440px;              
+        width: 57vw;              
     }
     
     .wrapper2 {        
-        width: 688px;        
-        top: 80px;   
+        width: 90vw;        
+        top: 130px;   
     }
 
+    .forminputs {
+        top: 100px;
+    }
+    
     .contactinfo {
-        left: 10px; 
+        top: 100px;        
+        left: 3vw; 
+    }
+
+    .text32 {
+        width: 200px;
     }
 
     .footer {
-        width: 768px;        
-        margin-left: -384px; 
-        top: calc(1195px + 1720px);             
+        width: 100vw;        
+        margin: 0; 
+        left: 0;
+        top: 2770px;             
     }   
+
+    /*popup style*/
+
+.b-container{
+    width:300px;
+    height:200px;
+    background-color: #ccc;
+    margin:0px auto;
+    padding:10px;    
+    color: #fff;
+    z-index: -1;    
+}
+
+
+.b-popup{
+    width: 100vw;
+    height: 2000px;
+    background-color: rgba(f,f,f,0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    z-index: -1;
+}
+
+.b-popup .b-popup-content{    
+    width: 30%;
+    height: 160px;       
+    background-color: #f06c64;
+    border-radius:5px;
+    box-shadow: 0px 0px 10px #000;
+    z-index: -1;
+}
+
+.b-popup-content {
+    position: absolute;
+    left: 35%;
+    top: 250px;
+}
+
+.popup_text {
+    color: white;
+    font-size: 12px;
+    line-height: 22px;    
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    position: relative;
+    left: 10%;
+}
+
+/*end popup*/
 
 }
