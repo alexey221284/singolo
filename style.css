@@ -997,17 +997,11 @@ padding-top: 2px;
 
 @media (max-width: 768px) {
 
-    body {
-        overflow-x: hidden; /* Hide horizontal scrollbar */
-    }
-
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .example::-webkit-scrollbar {
+    .superwrapper::-webkit-scrollbar {
         display: none;
-    }
-  
-    /* Hide scrollbar for IE and Edge */
-    .example {
+    }  
+    
+    .superwrapper {
     -ms-overflow-style: none;
     }
 
