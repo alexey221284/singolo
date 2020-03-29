@@ -995,15 +995,7 @@ padding-top: 2px;
 
 /* Responsive - Tablet - 768px */
 
-@media (max-width: 768px) {
-
-    .superwrapper::-webkit-scrollbar {
-        display: none;
-    }  
-    
-    .superwrapper {
-    -ms-overflow-style: none;
-    }
+@media (max-width: 768px) {    
 
     .single_wrapper {  
         width: 100vw;      
@@ -1126,6 +1118,7 @@ padding-top: 2px;
     }
 
     .getaquote {
+        position: absolute;
         width: 100vw;        
         margin: 0; 
         left: 0;
@@ -1163,10 +1156,326 @@ padding-top: 2px;
         width: 100vw;        
         margin: 0; 
         left: 0;
-        top: 2770px;             
-    }   
+        top: 3436px;             
+    }  
 
-    /*popup style*/
+/*popup style*/
+
+.b-popup{
+    width: 100vw;       
+}
+
+.b-popup-content {
+    left: 35%;
+    
+}
+/*end popup*/
+
+}
+
+@media (max-width: 375px) {    
+
+    .single_wrapper {  
+        width: 100vw;      
+        left: 0;
+        margin: 0;    
+    }
+
+    .header {
+        width: 100vw; 
+        height: 71px;       
+    }
+
+    .logo {                
+        left: 130px;
+        top: 25px;   
+        }
+
+    ul.navigation li{    
+        display: none;
+    }  
+
+    #pic {
+        width: 100vw;
+    }
+
+    .slider {
+        width: 100vw;
+        height: 218px;
+    }
+
+    #img_home {     
+        width: 4vw;
+        height: 4vw;
+        left: 19.3vw;
+        top: 65.2vw;   
+    }
+
+   #img_home_goriz {        
+        width: 4vw;
+        height: 4vw;
+        left: 42.4vw;
+        top: 46.5vw;
+        
+}
+
+   #display {   
+        width:  76.2vw;   
+        left: 10.8vw;
+        top: 25.7vw;    
+   }
+
+   .left {
+        width: 2vw;              
+        left: 5vw;
+        top: 40vw;
+        z-index: 7;       
+   }
+
+   .right {   
+        left: 92vw;
+        top: 40vw;   
+        z-index: 7;
+    }
+
+    .services {
+        width: 100vw;
+        height: 1200px;        
+    }
+    
+    .main1, .main2 {
+        display: flex;
+        flex-direction: column;
+    }    
+
+    .heart, .text3, .star, .text6 {
+        display: initial;
+    }
+
+    .text1 {
+        position: absolute;
+        left: 85px;
+        top: 0px;
+        width: 220px;   	
+    }
+    
+    .text2 {
+        position: absolute;
+        left: 85px;
+        top: 120px;
+        width: 220px;
+    }
+    
+    .text3 {
+        position: absolute;
+        left: 85px;
+        top: 240px;
+        width: 220px;
+    }
+    
+    .text4 {
+        position: absolute;
+        left: 85px;
+        top: 360px;
+        width: 220px;
+    }
+    
+    .text5 {
+        position: absolute;
+        left: 85px;
+        top: 480px;
+        width: 220px;
+    }
+    
+     .text6 {
+        position: absolute;
+        left: 85px;
+        top: 600px;
+        width: 220px;
+    }
+
+    .pen {
+        position: absolute;
+        left: 40px;
+        top: 0px;            
+    }
+    
+    .bulb {
+        position: absolute;
+        left: 40px;
+        top: 120px;    
+    }
+    
+    .heart {
+        position: absolute;
+        left: 40px;
+        top: 240px;    
+    }
+    
+    .phone {
+        position: absolute;
+        left: 40px;
+        top: 360px;         
+    }
+    
+    .bubble {
+        position: absolute;
+        left: 40px;
+        top: 480px;    
+    }
+    
+    .star {
+        position: absolute;
+        left: 40px;
+        top: 600px;    
+    }
+
+
+
+    .second_wrapper {
+        width: 100vw;
+        height: 1020px;
+        left: 0;
+        margin: 0; 
+        top: 1500px;                  
+    }
+
+    .wrapper__portfolio__text {
+        width: 90vw;
+        left: 5vw;
+        top: 20px;      
+    }
+
+    .portfolio__text {
+        top: 35px;
+    }
+
+    .gallery {
+        left: 3.5vw;
+        display: grid;
+        grid-column-gap: 3vw;
+        grid-row-gap: 3vw;         
+        grid-template-columns: 45vw 45vw;        
+        grid-template-areas:   
+            "a1 b1"
+            "c1 d1"
+            "a2 b2"
+            "c2 d2";               
+    }
+
+    .a1, .a2, .b1, .b2, .c1, .c2, .d1, .d2 {
+        width: 45vw;                             
+    }
+
+    .a3, .b3, .c3, .d3, .a4, .b4, .c4, .d4 {
+        display: none;
+    }
+
+    .button1, .button2, .button3, .button4 {
+        display: none;
+    }
+
+    .wrapper__about {
+        width: 100vw;
+        top: 1026px; 
+        height: 1730px;    
+    }
+
+    .head_about {
+        width: 90vw;        
+        left: 8vw;
+        top: 30px;    
+    }
+
+    .fotogallary {        
+        top: 300px;
+        left: 12vw;
+        display: grid;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-template-columns: 285px ;
+        grid-template-rows: 300px 20px 35px 35px 300px 20px 35px 35px 300px 20px 35px 35px;
+        grid-template-areas:    
+                "foto1"
+                "name1"
+                "disc1"
+                "icon1"
+                "foto2"
+                "name2"
+                "disc2"
+                "icon2"
+                "foto3"
+                "name3"
+                "disc3"
+                "icon3";               
+    }    
+
+    .getaquote {
+        width: 100vw;        
+        margin: 0; 
+        left: 0;
+        top: 4240px; 
+        height: 1000px;               
+    }
+
+    .intro h1 {
+        top: 20px;
+        left: 30px;
+    }
+
+    .text31 {   
+        width: 80vw;        
+        left: 30px; 
+        top: 80px;       
+    }
+
+    #forminputs_name, #forminputs_email, #forminputs_subject, #forminputs_describe {
+        width: 80vw;                    
+    }
+
+    #forminputs_submit {
+        width: 85vw;
+    }
+    
+    .wrapper2 {        
+        width: 90vw;        
+        top: 130px;   
+    }
+
+    .forminputs {
+        position: absolute;
+        top: 200px;
+        left: -3vw;
+    }
+    
+    .contactinfo {
+        position: absolute;
+        top: 640px;        
+        left: -3vw;         
+    }
+
+    .text32 {
+        width: 80vw;
+    }
+
+    .socialicons {
+        position: absolute;
+        right: 30vw;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .footer {
+        position: absolute;
+        width: 100vw;        
+        margin: 0; 
+        left: 0;
+        top: 5244px;             
+    }  
+
+/*popup style*/
 
 .b-container{
     width:300px;
@@ -1178,9 +1487,8 @@ padding-top: 2px;
     z-index: -1;    
 }
 
-
 .b-popup{
-    width: 100vw;
+    width: 375vw;
     height: 2000px;
     background-color: rgba(f,f,f,0.5);
     overflow: hidden;
@@ -1190,7 +1498,7 @@ padding-top: 2px;
 }
 
 .b-popup .b-popup-content{    
-    width: 30%;
+    width: 84vw;
     height: 160px;       
     background-color: #f06c64;
     border-radius:5px;
@@ -1200,7 +1508,7 @@ padding-top: 2px;
 
 .b-popup-content {
     position: absolute;
-    left: 35%;
+    left: 8vw;
     top: 250px;
 }
 
@@ -1212,7 +1520,7 @@ padding-top: 2px;
     font-weight: 400;
     text-align: left;
     position: relative;
-    left: 10%;
+    left: 5vw;
 }
 
 /*end popup*/
