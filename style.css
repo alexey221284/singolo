@@ -1,7 +1,7 @@
-body {
+/*body {
 	margin: 0;
     padding: 0;
-} 
+} */
 
 .single_wrapper {
     width: 1020px;
@@ -1173,6 +1173,8 @@ padding-top: 2px;
 
 }
 
+/* Responsive Mobile - 375px */
+
 @media (max-width: 375px) {    
 
     .single_wrapper {  
@@ -1446,7 +1448,8 @@ padding-top: 2px;
         position: absolute;
         top: 200px;
         left: -3vw;
-    }
+        width: 320px;
+    }    
     
     .contactinfo {
         position: absolute;
