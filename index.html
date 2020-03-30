@@ -13,6 +13,7 @@
 
     <div class="single_wrapper">
         <header class="header">
+            <button id="open-burgermenu" onclick="openburgermenu()"><img src="assets/burgermenu.png"></button>
             <div>
                 <h1><a href="#" class="logo"></a></h1>
                 <nav>
@@ -248,6 +249,22 @@
         <button id="close-btn" onclick="closebutton()">OK</button>        
     </div>
 </div>
+
+
+    <div class="burgermenu" id="burgermenu"> 
+
+        <button id="close-burgermenu" onclick="closeburgermenu()"><img src="assets/burgermenu.png"></button> 
+
+        <ul class="burger_navigation" id="menu">                        
+            <li onclick="location.href='#home'; closeburgermenu()">home</li>
+            <li onclick="location.href='#services'; closeburgermenu()">services</li>
+            <li onclick="location.href='#portfolio'; closeburgermenu()">portfolio</li>
+            <li onclick="location.href='#about'; closeburgermenu()">about</li>
+            <li onclick="location.href='#contact'; closeburgermenu()">contact</li>                                               
+        </ul> 
+    </div>
+
+
 
 
 <!--End Popup-->

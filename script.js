@@ -95,3 +95,11 @@ function artwork() {
     let elem4 = document.getElementById("gallery");
     elem4.style.gridTemplateAreas = '"a3 b1 b2 b3" "c1 c2 c3 d1" "d2 d3 a1 a2"';
 };
+
+function openburgermenu() {
+    document.getElementById("burgermenu").style.zIndex = '8';    
+}
+
+function closeburgermenu() {
+    document.getElementById("burgermenu").style.zIndex = '-1';
+}
