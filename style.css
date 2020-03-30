@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-    padding: 0;
+    padding: 0;    
 } 
 
 .single_wrapper {
@@ -26,6 +26,10 @@ body {
 }
 
 #open-burgermenu {
+    display: none;
+}
+
+.burgermenu {
     display: none;
 }
 
@@ -981,6 +985,7 @@ padding-top: 2px;
     position: absolute;
     left: 50%;
     top: 250px;
+    overflow: hidden;
 }
 
 .popup_text {
@@ -1085,7 +1090,7 @@ padding-top: 2px;
 
     .gallery {
         display: grid;
-        grid-column-gap: 2.6vw;        
+        grid-column-gap: 20px;        
         grid-template-columns: 28.6vw 28.6vw 28.6vw;        
         grid-template-areas:   
             "a1 b1 c1"
@@ -1358,10 +1363,10 @@ padding-top: 2px;
     }
 
     .gallery {
-        left: 3.5vw;
+        left: 3.3vw;
         display: grid;
-        grid-column-gap: 3vw;
-        grid-row-gap: 3vw;         
+        grid-column-gap: 14px;
+        grid-row-gap: 14px;         
         grid-template-columns: 45vw 45vw;        
         grid-template-areas:   
             "a1 b1"
@@ -1484,11 +1489,13 @@ padding-top: 2px;
     }      
 
     .burgermenu {   
-        position: absolute;        
+        display: initial;
+        position: fixed;        
         width: 278px;
         height: 812px;        
         background-color: #2d303a; 
-        z-index: -1;       
+        z-index: -1;    
+           
     }    
 
     ul.burger_navigation li{
@@ -1500,13 +1507,25 @@ padding-top: 2px;
         position: relative;
         left: 50px;
         top: 50px;
+        width: 150px;
         display: flex;
         flex-direction: column;
         margin-top: 30px;
         text-decoration: none;
         outline: none;
         letter-spacing: -1px;
-        }    
+        
+    }  
+    
+    ul.burger_navigation li.active {
+        background: #f06c64;
+        color: #494e62;           
+    }
+
+    ul.burger_navigation li:not(.active):hover {
+        cursor: pointer;
+        color: #f06c64;        
+    }
 
     #open-burgermenu {
         display: initial;
@@ -1514,6 +1533,7 @@ padding-top: 2px;
         left: 20px;
         top: 20px;
         border-radius: 1px;
+        transform: rotate(90deg);
     }
 
     #close-burgermenu {
