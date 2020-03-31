@@ -3,6 +3,11 @@ body {
     padding: 0;    
 } 
 
+* {
+    scroll-behavior: smooth;
+    max-width: 100%;
+  }
+
 .single_wrapper {
     width: 1020px;
     height: 1195px;
